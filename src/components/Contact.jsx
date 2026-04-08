@@ -5,8 +5,8 @@ const contactItems = [
   {
     icon: Phone,
     label: 'Phone',
-    value: '(555) 123-4567',
-    href: 'tel:+15551234567',
+    value: '+1 630-453-3769',
+    href: 'tel:+16304533769',
   },
   {
     icon: Mail,
@@ -16,9 +16,9 @@ const contactItems = [
   },
   {
     icon: MapPin,
-    label: 'Service Area',
-    value: 'Greater Metropolitan Area',
-    href: null,
+    label: 'Address',
+    value: '8821 Ramm Dr Ste 5, Naperville, IL 60564',
+    href: 'https://maps.google.com/?q=8821+Ramm+Dr+Ste+5+Naperville+IL',
   },
   {
     icon: Clock,
