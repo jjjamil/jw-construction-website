@@ -46,6 +46,13 @@ export default function Portfolio() {
     return () => observer.disconnect();
   }, []);
 
+  // Re-apply reveal animation when category changes (new DOM nodes won't get it from the observer)
+  useEffect(() => {
+    if (sectionRef.current) {
+      sectionRef.current.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+    }
+  }, [activeCategory]);
+
   // Keyboard navigation for lightbox
   useEffect(() => {
     if (lightboxIndex === null) return;
